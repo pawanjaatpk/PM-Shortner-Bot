@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '29362464'))
-API_HASH = environ.get('API_HASH', '31973315b0872a0478886de31a1e4848')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -43,13 +43,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://telegrammange:sawan09@cluster0.upfv2ff.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Ziplinker.net')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Omnifly.in.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'b2488d7cb39a3bda4f66123a3f67cb773af054fb')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'Ziplinker.net')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'b2488d7cb39a3bda4f66123a3f67cb773af054fb')
@@ -58,13 +58,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+M58gfU0jDOc3YjFl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bot_channel_011')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/pr_movies_request_groups')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mv_backup')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+W5plh7_tP19lZjg1')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001765670990'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Action_Movies_Group')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'pr_movies_request_groups')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
