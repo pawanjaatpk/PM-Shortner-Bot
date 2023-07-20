@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/Moviesbotz/ben-url-filter-bot",
-    "repository": "https://github.com/Moviesbotz/ben-url-filter-bot",
+    "repository": "https://github.com/pawanjaatpk/PM-Shortner-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
