@@ -1922,7 +1922,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
     else:
         # cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
-        cap = f"<b>🍀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗯𝘆 🍀 : {message.from_user.mention}\n🚀𝗥𝗲𝘀𝘂𝗹𝘁 𝗙𝗼𝘂𝗻𝗱𝗲𝗱 :- {total_results} \n 📟𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 : {search}\n\n🧿 ᴀʟʟ ꜰɪʟᴇꜱ ᴀʀᴇ ʜᴇʀᴇ 🧿</b>"
+        cap = f"<b>🍀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗯𝘆 🍀 : {message.from_user.mention}\n🚀𝗥𝗲𝘀𝘂𝗹𝘁 𝗙𝗼𝘂𝗻𝗱𝗲𝗱 :- {total_results} \n 📟𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 : {search}\n\n🧿 ᴀʟʟ ꜰɪʟᴇꜱ ᴀʀᴇ ʜᴇʀᴇ 🧿\n\n</b>"
         for file in files:
             cap += f"<b>🚦 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
 
